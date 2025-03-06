@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()  // تأكد من إضافة google repository هنا إذا لم يكن موجودًا
+    }
+    dependencies {
+        // تأكد من استخدام النسخة الحديثة من Kotlin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21"  // تأكد من أنك تستخدم النسخة التي تناسب مشروعك
+        classpath 'com.android.tools.build:gradle:7.4.2'  // نسخة الـ Gradle الخاصة بـ Android
+    }
+}
+
+apply plugin: 'com.android.application'  // إذا كان تطبيقك هو تطبيق أندرويد، تأكد من تطبيق هذا
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.yazan_for_eas.Education"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.21"  // نسخة Kotlin المناسبة للمشروع
+}

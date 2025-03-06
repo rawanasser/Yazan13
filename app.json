@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Education",
+    "slug": "education",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yazan_for_eas.Education",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      "expo-font"
+    ],
+    "updates": {
+      "url": "https://u.expo.dev/3ae5db0c-e9f7-4e87-add5-d70ce9cc22bd"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "82c41951-047c-4164-b0e3-5e082df7f18a"
+      }
+    },
+    "owner": "helolo"
+  }
+}
